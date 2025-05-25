@@ -9,16 +9,18 @@
 <body>
   <div class="container">
     <h1>Registro de Asistencia</h1>
-    
+
     <label for="nombre">Escribe tu nombre completo:</label>
-    <input type="text" id="nombre" autocomplete="off" />
-    <div id="sugerencias"></div>
+    <div style="position: relative;">
+      <input type="text" id="nombre" autocomplete="off" />
+      <div id="sugerencias"></div>
+    </div>
 
     <label for="celular">Escribe tu número celular:</label>
     <input type="text" id="celular" />
 
     <button id="btn-registrar" onclick="registrarAsistencia()">Registrar asistencia</button>
-    
+
     <p id="mensaje"></p>
 
     <a href="https://forms.gle/M3gSePf2xqaUNHJj8" target="_blank">

@@ -1,67 +1,85 @@
 body {
-  background-image: url('cruz.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
-  padding: 2rem;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-  
-  .container {
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
-    display: block;
-    margin-top: 1rem;
-  }
-  
-  input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-  }
-  
-  button {
-    margin-top: 1rem;
-    width: 100%;
-    padding: 0.8rem;
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #2563eb;
-  }
-  
-  #mensaje {
-    margin-top: 1rem;
-    font-weight: bold;
-  }
-  
-  #sugerencias {
-    border: 1px solid #ccc;
-    max-height: 150px;
-    overflow-y: auto;
-    margin-top: 5px;
-    display: none;
-  }
-  
-  #sugerencias div {
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  #sugerencias div:hover {
-    background-color: #efefef;
-  }
-  
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+}
+
+#mensaje {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* ESTILOS PARA SUGERENCIAS */
+#sugerencias {
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  width: calc(100% - 62px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#sugerencias div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#sugerencias div:hover {
+  background-color: #f0f0f0;
+}
