@@ -83,7 +83,7 @@ if (celular && !/^\d{7,15}$/.test(celular)) {
   }
   
   // Cargar nombres desde la hoja de cálculo
-  fetch("https://script.google.com/macros/s/AKfycbwr34wFxW3BEjxe9ZiuNT31__qTYCOhnLLke8JWy3ui9kjPjkYt2FLhHdoKaNFAJBGx/exec?nombres=1")
+  fetch("https://script.google.com/macros/s/AKfycbwr34wFxW3BEjxe9ZiuNT31__qTYCOhnLLke8JWy3ui9kjPjkYt2FLhHdoKaNFAJBGx/exec")
     .then((r) => r.json())
     .then((data) => {
       listaNombres = data.nombres;
