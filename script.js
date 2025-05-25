@@ -45,16 +45,16 @@ function normalizarTexto(texto) {
     const celular = document.getElementById("celular").value.trim();
     const boton = document.getElementById("btn-registrar");
   
-    if (!nombre || !celular) {
-      mostrarMensaje("Por favor, llena ambos campos", "red");
+    if (!nombre && !celular) {
+      mostrarMensaje("Por favor, ingresa tu nombre o número celular", "red");
       return;
     }
   
     // Validar número de celular: solo dígitos, entre 7 y 15 cifras
-    if (!/^\d{7,15}$/.test(celular)) {
-      mostrarMensaje("Número de celular no válido", "red");
-      return;
-    }
+if (celular && !/^\d{7,15}$/.test(celular)) {
+  mostrarMensaje("Número de celular no válido", "red");
+  return;
+}
   
     boton.disabled = true; // Desactivar botón para evitar múltiples clics
   
