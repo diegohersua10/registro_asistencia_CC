@@ -1,8 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 2rem;
-    background-color: #f7f7f7;
-  }
+  background-image: url('cruz.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
   
   .container {
     max-width: 400px;
