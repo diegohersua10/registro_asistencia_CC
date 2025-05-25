@@ -75,7 +75,7 @@ if (celular && !/^\d{7,15}$/.test(celular)) {
       })
       .catch((error) => {
         console.error(error);
-        mostrarMensaje("Error al registrar", "red");
+        mostrarMensaje("Error al registrar.", "red");
       })
       .finally(() => {
         boton.disabled = false; // Reactivar botón al finalizar
